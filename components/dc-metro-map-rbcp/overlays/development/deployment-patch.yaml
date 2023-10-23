@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-rbcp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-service-e2e-tenant/appstudio/dc-metro-map-rbcp@sha256:d52a9034950943b5c948a7efcea33fcb0214cb726bf1ebedace3012ac163d38e
+        name: my-nodejs
+        resources: {}
+status: {}
